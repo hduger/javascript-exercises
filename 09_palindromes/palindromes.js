@@ -1,4 +1,12 @@
-const palindromes = function () {
+const palindromes = function (palin) {
+    let words = palin.toLowerCase().replace(/[^a-z]/g, "");
+    return (
+        words
+        .split("")
+        .reverse()
+        .join("")== words
+
+    )
 
 };
 
